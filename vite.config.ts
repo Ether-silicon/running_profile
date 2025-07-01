@@ -35,7 +35,8 @@ export default defineConfig({
       },
     }),
   ],
-  base: process.env.PATH_PREFIX || '/',
+  // base: process.env.PATH_PREFIX || '/',
+  base: '/running_profile/', // 👈 IMPORTANT for GitHub Pages
   define: {
     "import.meta.env.VERCEL": JSON.stringify(process.env.VERCEL),
   },
